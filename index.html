@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RobloxPress | کامیونیتی روبلاکس ایران</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Vazirmatn',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fb;
+color:#222;
+}
+
+/* Navbar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:800;
+color:#2563eb;
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.nav-links a:hover{
+color:#2563eb;
+}
+
+/* Hero */
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px;
+background:
+linear-gradient(
+135deg,
+#60a5fa,
+#8b5cf6,
+#22c55e
+);
+color:white;
+}
+
+.hero-content{
+max-width:900px;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+line-height:2;
+margin-bottom:35px;
+}
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 28px;
+border:none;
+border-radius:15px;
+cursor:pointer;
+font-size:1rem;
+font-weight:700;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn-primary{
+background:white;
+color:#2563eb;
+}
+
+.btn-secondary{
+background:rgba(255,255,255,.2);
+color:white;
+backdrop-filter:blur(10px);
+}
+
+.btn:hover{
+transform:translateY(-4px);
+}
+
+/* Stats */
+
+.stats{
+padding:80px 8%;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.stat-box{
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stat-box h2{
+color:#2563eb;
+font-size:2rem;
+margin-bottom:10px;
+}
+
+/* Features */
+
+.section-title{
+text-align:center;
+font-size:2.3rem;
+margin-bottom:50px;
+font-weight:800;
+}
+
+.features{
+padding:40px 8% 90px;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2563eb;
+}
+
+/* Games */
+
+.games{
+padding:20px 8% 90px;
+}
+
+.game-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.game-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.game-image{
+height:180px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:3rem;
+color:white;
+font-weight:800;
+}
+
+.blox{
+background:#f97316;
+}
+
+.garden{
+background:#22c55e;
+}
+
+.brainrot{
+background:#8b5cf6;
+}
+
+.brook{
+background:#3b82f6;
+}
+
+.game-content{
+padding:20px;
+}
+
+/* Join */
+
+.join{
+margin:70px 8%;
+padding:60px 20px;
+border-radius:30px;
+text-align:center;
+background:linear-gradient(135deg,#2563eb,#7c3aed);
+color:white;
+}
+
+.join h2{
+font-size:2.5rem;
+margin-bottom:20px;
+}
+
+/* Footer */
+
+footer{
+background:#111827;
+color:white;
+padding:40px;
+text-align:center;
+margin-top:60px;
+}
+
+footer p{
+opacity:.8;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+RobloxPressIR
+</div>
+
+<div class="nav-links">
+<a href="#">خانه</a>
+<a href="#">اخبار</a>
+<a href="#">بازی‌ها</a>
+<a href="#">آموزش‌ها</a>
+<a href="#">ارتباط</a>
+</div>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>RobloxPressIR</h1>
+
+<p>
+مرجع اخبار، آموزش‌ها، رویدادها و کامیونیتی روبلاکس ایران
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn btn-primary">
+ورود به دیسکورد
+</a>
+
+<a href="#games" class="btn btn-secondary">
+بازی‌های محبوب
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-box">
+<h2>1000+</h2>
+<p>عضو هدف کامیونیتی</p>
+</div>
+
+<div class="stat-box">
+<h2>24/7</h2>
+<p>پوشش اخبار روبلاکس</p>
+</div>
+
+<div class="stat-box">
+<h2>4+</h2>
+<p>بازی محبوب</p>
+</div>
+
+</section>
+
+<section class="features">
+
+<h2 class="section-title">
+امکانات RobloxPressIR
+</h2>
+
+<div class="feature-grid">
+
+<div class="card">
+<h3>اخبار روبلاکس</h3>
+<p>آخرین اخبار و آپدیت‌های مهم روبلاکس.</p>
+</div>
+
+<div class="card">
+<h3>آموزش‌ها</h3>
+<p>راهنماهای فارسی برای بازیکنان ایرانی.</p>
+</div>
+
+<div class="card">
+<h3>رویدادها</h3>
+<p>مسابقات و چالش‌های هیجان‌انگیز.</p>
+</div>
+
+<div class="card">
+<h3>کامیونیتی</h3>
+<p>ارتباط با بازیکنان فارسی زبان.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="games" id="games">
+
+<h2 class="section-title">
+بازی‌های محبوب
+</h2>
+
+<div class="game-grid">
+
+<div class="game-card">
+<div class="game-image blox">BF</div>
+<div class="game-content">
+<h3>Blox Fruits</h3>
+<p>یکی از محبوب‌ترین بازی‌های روبلاکس.</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-image garden">GG</div>
+<div class="game-content">
+<h3>Grow a Garden</h3>
+<p>بازی کشاورزی محبوب و سرگرم‌کننده.</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-image brainrot">SB</div>
+<div class="game-content">
+<h3>Steal a Brainrot</h3>
+<p>از ترندترین بازی‌های روبلاکس.</p>
+</div>
+</div>
+
+<div class="game-card">
+<div class="game-image brook">BH</div>
+<div class="game-content">
+<h3>Brookhaven</h3>
+<p>تجربه نقش‌آفرینی محبوب در روبلاکس.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="join">
+
+<h2>
+به RobloxPressIR بپیوند!
+</h2>
+
+<p style="margin-bottom:25px">
+با بازیکنان ایرانی روبلاکس آشنا شو و در رویدادها شرکت کن.
+</p>
+
+<a href="#" class="btn btn-primary">
+ورود به دیسکورد
+</a>
+
+</section>
+
+<footer>
+
+<h3>RobloxPressIR</h3>
+
+<br>
+
+<p>
+© 2026 RobloxPressIR - All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
